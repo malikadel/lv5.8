@@ -1,0 +1,40 @@
+Installation of laravel 5.8 on a freshly installed machine.
+
+composer create-project --prefer-dist laravel/laravel lv58 "5.8.*"
+
+It was returning errors so I have to do following.
+
+Install composer
+
+sudo apt-get update
+
+sudo apt-get install php-mbstring 
+
+sudo apt install php-xml
+
+serivce apache2 restart
+
+Then remove lv58
+
+again
+
+composer create-project --prefer-dist laravel/laravel lv58 "5.8.*"
+
+sudo chmod 0777 -R storage
+
+.....
+
+
+To get available composer commands, run 
+
+composer
+
+above will list all existing commands of composer.
+
+php artisan serve
+
+by default it try to run on 
+
+http://127.0.0.1:8000 but if on your machine vm or anything on 8000 running then it moves to
+
+http://127.0.0.1:8001
