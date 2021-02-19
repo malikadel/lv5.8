@@ -28,7 +28,7 @@ Route::get('about',function(){
 
 Route::get('customers','CustomersController@index');
 
-
+Route::post('customers','CustomersController@store');
 
 Route::get('welcome-email',function(){
     //Findings
