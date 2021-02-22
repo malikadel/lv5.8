@@ -13,23 +13,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    //by setting name of view to welcome it return error, whereas changing name works fine.
+    //return view('welcome');
+    return view('home');
 });
-
-
 Route::get('contact',function(){
 	return view('contact');
 });
-
-
 Route::get('about',function(){
 	return view('about');
 });
-
 Route::get('customers','CustomersController@index');
-
 Route::post('customers','CustomersController@store');
-
 Route::get('welcome-email',function(){
     //Findings
     //How to set up emailing using mail trap.

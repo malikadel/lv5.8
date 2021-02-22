@@ -1,12 +1,10 @@
 @extends('layout')
 
 @section('title')
-About Us
+Home
 @endsection
 
 @section('content')
-    <h1>About US</h1>
+    <h1>Home Page</h1>
 @endsection
-
-
 
